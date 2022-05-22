@@ -1,1 +1,27 @@
-<p>sidenav works!</p>
+<mat-nav-list>
+  <div class="logo py-4">
+    <img src="/src/assets/img/logo.png" alt="vote Logo" />
+    voting app
+  </div>
+  <mat-divider></mat-divider>
+  <h2 matSubheader class="mt-2">APPLICATIONS</h2>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
+    <mat-icon>home</mat-icon>   Home
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/urnes">
+    <mat-icon>dashboard</mat-icon>   Urnes
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/vote">
+    <mat-icon>done_outline</mat-icon>   vote
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/candidatList">
+    <mat-icon>assignment</mat-icon>   Candidate-list
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/admins">
+     <mat-icon>supervisor_account</mat-icon> Admins
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/electeurs">
+    <mat-icon>people</mat-icon>  Users
+  </a>
+
+</mat-nav-list>

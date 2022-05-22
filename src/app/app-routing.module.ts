@@ -1,10 +1,27 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { AdminComponent } from './admin/admin/admin.component';
+import { CandidatListComponent } from './candidat-list/candidat-list/candidat-list.component';
+import { CandidatComponent } from './candidat/candidat/candidat.component';
+import { ElecteurComponent } from './electeur/electeur/electeur.component';
+import { HomeComponent } from './home/home.component';
+import { UrnesComponent } from './urnes/urnes/urnes.component';
+import { VoteComponent } from './vote/vote/vote.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'urnes', component: UrnesComponent },
+  { path: 'admins', component: AdminComponent },
+  { path: 'electeurs', component: ElecteurComponent },
+  { path: 'candidats', component: CandidatComponent },
+  { path: 'candidatList', component: CandidatListComponent },
+  { path: 'vote', component: VoteComponent },
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
