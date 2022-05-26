@@ -42,7 +42,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { DataTablesModule } from 'angular-datatables';
+import { AdminCreateComponent } from './admin/admin-create/admin-create.component';
+import { AdminUpdateComponent } from './admin/admin-update/admin-update.component';
+import { CandidatCreateComponent } from './candidat/candidat-create/candidat-create.component';
+import { CandidatUpdateComponent } from './candidat/candidat-update/candidat-update.component';
+import { CandidatListCreateComponent } from './candidat-list/candidat-list-create/candidat-list-create.component';
+import { CandidatListUpdateComponent } from './candidat-list/candidat-list-update/candidat-list-update.component';
+import { ElecteurCreateComponent } from './electeur/electeur-create/electeur-create.component';
+import { ElecteurUpdateComponent } from './electeur/electeur-update/electeur-update.component';
+import { VoteCreateComponent } from './vote/vote-create/vote-create.component';
+import { VoteUpdateComponent } from './vote/vote-update/vote-update.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +71,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
     HomeComponent,
     HeaderComponent,
     SidenavComponent,
+    AdminCreateComponent,
+    AdminUpdateComponent,
+    CandidatCreateComponent,
+    CandidatUpdateComponent,
+    CandidatListCreateComponent,
+    CandidatListUpdateComponent,
+    ElecteurCreateComponent,
+    ElecteurUpdateComponent,
+    VoteCreateComponent,
+    VoteUpdateComponent,
 
   ],
   imports: [
@@ -71,6 +91,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
+    DataTablesModule,
     // * MATERIAL IMPORTS
     MatSidenavModule,
     MatToolbarModule,

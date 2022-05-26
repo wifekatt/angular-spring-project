@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AdminDialogComponent } from './admin/admin-dialog/admin-dialog.component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { CandidatListComponent } from './candidat-list/candidat-list/candidat-list.component';
 import { CandidatComponent } from './candidat/candidat/candidat.component';
@@ -17,6 +18,8 @@ const routes: Routes = [
   { path: 'candidats', component: CandidatComponent },
   { path: 'candidatList', component: CandidatListComponent },
   { path: 'vote', component: VoteComponent },
+  { path: 'admindialog', component: AdminDialogComponent },
+
 
 ];
 
